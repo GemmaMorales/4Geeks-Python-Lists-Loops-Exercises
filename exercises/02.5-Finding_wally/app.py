@@ -2,3 +2,14 @@ people = [ 'Lebron','Aaliyah','Diamond','Dominique','Aliyah','Jazmin','Darnell',
 
 #Your code here:
 
+#Wally_index = people.index('Wally')
+#print(Wally_index)
+
+def get_index_positions(people, element):
+    indexPosList = []
+    for i in range(len(people)): 
+        if people[i] == element:
+            indexPosList.append(i)
+    return indexPosList   
+
+print(get_index_positions(people, 'Wally'))
